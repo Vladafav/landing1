@@ -9,10 +9,11 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 a:visited {
-  color: white;
+  color: #CCCCCC;
 }
 
 a:hover {
@@ -34,21 +35,15 @@ ul {
 }
 
 @media (min-width: 780px) {
-  .container {
-    width: 760px;
-  }
+  .container { width: 760px; }
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+  .container { width: 970px; }
 }
 
-@media (min-width: 767px) {
-  .container {
-    width: 1170px;
-  }
+@media (min-width: 1170px) {
+  .container { width: 1170px; }
 }
 
 .landing-page header {
@@ -71,6 +66,7 @@ ul {
   margin-left: 10px;
   color: white;
   cursor: pointer;
+  transition: .3s;
 }
 
 .landing-page header .links li:last-child {
@@ -85,6 +81,20 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
 .landing-page .content .info h1 {
