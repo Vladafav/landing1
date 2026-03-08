@@ -12,19 +12,10 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #CCCCCC;
-}
+a:visited { color: white; }
+a:hover { color: yellow; }
 
-a:hover {
-  color: yellow;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+ul { list-style: none; padding: 0; margin: 0; }
 
 .container {
   padding-left: 5px;
@@ -34,17 +25,9 @@ ul {
   margin-top: -70px;
 }
 
-@media (min-width: 780px) {
-  .container { width: 760px; }
-}
-
-@media (min-width: 992px) {
-  .container { width: 970px; }
-}
-
-@media (min-width: 1170px) {
-  .container { width: 1170px; }
-}
+@media (min-width: 780px) { .container { width: 760px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
+@media (min-width: 1170px) { .container { width: 1170px; } }
 
 .landing-page header {
   min-height: 80px;
